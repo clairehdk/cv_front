@@ -10,11 +10,17 @@ import deliveroo_logo from "../assets/img/deliveroo_logo.png";
 import happycow from "../assets/img/happy_cow.png";
 import happycow_logo from "../assets/img/happycow_logo.svg";
 import Project from "./Project";
+import git from "../assets/img/git.png";
 
 const Projects = () => {
   return (
     <div className="projects">
-      <h1>Mes projets</h1>
+      <div className="head">
+        <h1>Mes projets</h1>
+        <a href="https://github.com/clairehdk" target="_blank">
+          <img className="git" src={git} alt="Git Hub" />
+        </a>
+      </div>
       <section className="all">
         <Project
           block_name="marvel"

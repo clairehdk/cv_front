@@ -16,6 +16,9 @@ h1 {
   padding: 40px 0 40px 0;
   font-size: 2.5em;
 }
+input {
+  outline: none;
+}
 
 /* ------------- */
 /* HEADBLOCK */
@@ -328,6 +331,16 @@ h1 {
 .trip_logo {
   width: 200px;
 }
+
+.head {
+  display: flex;
+  align-items: center;
+  /* justify-content: ; */
+}
+.git {
+  width: 50px;
+  margin-left: 400px;
+}
 /* 
 .video video {
   height: 300px;
@@ -338,13 +351,59 @@ h1 {
 
 /* CONTACT */
 
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h1 {
+  padding-bottom: 40px;
+  padding-top: 0;
+}
 .contact .logos {
-  margin: auto;
-  width: 50%;
+  width: 25%;
   display: flex;
   justify-content: space-around;
 }
 .contact .logos img {
-  width: 75px;
+  width: 50px;
   outline: none;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 30px;
+}
+input[type="text"] {
+  margin-top: 10px;
+  padding: 10px;
+  font-family: Open Sans Condensed;
+  font-size: 1em;
+  cursor: pointer;
+}
+textarea {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: Open Sans Condensed;
+  font-size: 1em;
+  outline: none;
+  cursor: pointer;
+}
+.submit {
+  background-color: #3aa6a3;
+  border: none;
+  color: white;
+  margin: 20px 0;
+  padding: 15px 0px;
+  font-size: 1.4em;
+  font-family: Open Sans Condensed;
+  cursor: pointer;
+}
+
+.input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
 }
