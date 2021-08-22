@@ -1,0 +1,350 @@
+/* GENERAL RULES  */
+
+body {
+  font-family: "Open Sans Condensed";
+  color: #231e23;
+}
+a {
+  text-decoration: none;
+  color: #231e23;
+}
+.hidden {
+  display: none !important;
+}
+h1 {
+  text-align: center;
+  padding: 40px 0 40px 0;
+  font-size: 2.5em;
+}
+
+/* ------------- */
+/* HEADBLOCK */
+/* ------------- */
+
+.head_block {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/src/assets/img/hypnotize.png");
+  position: relative;
+}
+.head_block .titles {
+  /* margin-top: 100px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.head_block h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+.head_block h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+/* Arrow */
+
+/* .arrow_block {
+  position: relative;
+} */
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+}
+.arrow {
+  cursor: pointer;
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px black solid;
+  border-bottom: 2px black solid;
+}
+.arrow::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow {
+  from {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* SKILLS */
+
+.second_block {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.second_block h1 {
+  text-align: center;
+  padding: 0 0 40px 0;
+  font-size: 2.5em;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 90%;
+}
+
+/* Skill */
+
+.skill {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0;
+}
+.skill h3 {
+  font-size: 1.5em;
+  padding: 10px 0;
+}
+.skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* EXPERIENCES  */
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left !important;
+}
+.third_block h1 {
+  text-align: center;
+  padding: 0 0 40px 0;
+  font-size: 2.5em;
+}
+.third_block h3 {
+  text-align: right;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  padding-bottom: 5px;
+}
+.third_block h4 {
+  padding-bottom: 20px;
+}
+.third_block p {
+  margin: 0 !important;
+}
+.vertical-timeline::before {
+  background: #3aa6a3 !important;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    width: 40px !important;
+    height: 40px !important;
+    left: 50%;
+    margin-left: -20px !important;
+    top: 15px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns .vertical-timeline-element-content-arrow {
+    top: 36px !important;
+    left: 100%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 124%;
+    top: 11px;
+    font-size: 16px;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 124%;
+    top: 15px !important;
+    font-size: 16px;
+    font-size: 1.3rem !important;
+  }
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  margin-top: 8px;
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/src/assets/img/paper_2.png");
+  /* background-color: rgba(238, 238, 238, 0.849); */
+}
+.projects h1 {
+  text-align: center;
+  padding: 40px 0 40px 0;
+  font-size: 2.5em;
+}
+.projects h2 {
+  font-size: 1.4em;
+  padding: 20px 0 20px 0;
+  font-weight: 700;
+}
+.projects p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
+  padding: 0 15px;
+}
+.projects .all {
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 4px -18px 15px 10px rgb(150, 150, 150);
+}
+.projects .display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Marvel */
+.marvel {
+  width: 100%;
+  display: flex;
+  /* background-color: #dadada; */
+}
+.marvel .left_block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.marvel .marvel_logo {
+  width: 150px;
+}
+.marvel .right_block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.right_block .marvel_img {
+  width: 100%;
+  transition: all 0.5s;
+  height: 400px;
+}
+.marvel .marvel_img:hover {
+  transform: scale(1.2);
+}
+
+/* Vinted */
+.vinted {
+  width: 100%;
+  display: flex;
+}
+.vinted .left_block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.vinted .vinted_logo {
+  width: 125px;
+}
+.vinted .right_block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.left_block .vinted_img {
+  width: 100%;
+  height: 400px;
+  transition: all 0.5s;
+}
+.vinted .vinted_img:hover {
+  transform: scale(1.2);
+}
+
+.deliveroo_logo {
+  width: 200px;
+}
+.trip_logo {
+  width: 200px;
+}
+/* 
+.video video {
+  height: 300px;
+} */
+/* .video video {
+  height: 300px;
+} */
+
+/* CONTACT */
+
+.contact .logos {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .logos img {
+  width: 75px;
+  outline: none;
+}
